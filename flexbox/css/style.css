@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    border-bottom: 1px solid #eee;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.banner-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.banner-bg {
+    width: 800px;
+    height: 200px;
+    background-image: url('https://placehold.co/800x200?text=800+x+200');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.card {
+    flex: 0 1 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-gray { background-color: gray; }
+.btn-green { background-color: green; }
+
+.float-section {
+    margin-bottom: 6rem;
+    text-align: justify;
+}
+
+.img-left {
+    float: left; 
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 6rem;
+    align-items: flex-start;
+}
+
+.list-side, .text-side {
+    flex: 1;
+}
+
+.list-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.box-small {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.img-side-large {
+    flex: 0 0 400px;
+}
+
+.img-side-large img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    background-color: black;
+    padding: 4rem 10% 2rem 10%;
+    color: white;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.author {
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
