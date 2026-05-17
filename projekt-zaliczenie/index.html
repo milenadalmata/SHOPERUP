@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopstagram</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+    <div class="container">
+        <div class="page-header__wrapper">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Shopergram Logo">
+        </div>
+            <input type="text" placeholder="Szukaj..." class="search-bar">
+            <div class="nav-icons">
+                <span><img src="./img/home.svg" alt="Strona główna"></span> 
+                <span><img src="./img/send.svg" alt="Wyślij"></span>
+                <span><img src="./img/add.svg" alt="Dodaj"></span> 
+                <span><img src="./img/heart.svg" alt="Polubienia"></span>
+                <div class="image-square image-square--tiny">
+                    <img src="./img/users/user.jpeg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+
+        <section class="feed">
+            <div class="stories-card">
+                <div class="stories-wrapper">
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/john.jpeg" alt="">
+                        </div>
+                        <span>John Doe</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/will.jpeg" alt="">
+                        </div>
+                        <span>Will Smith</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/johny.jpeg" alt="">
+                        </div>
+                        <span>John Cage</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/lisa.jpeg" alt="">
+                        </div>
+                        <span>Lisa</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/amanda.jpeg" alt="">
+                        </div>
+                        <span>Amanda</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/cristiano.jpeg" alt="">
+                        </div>
+                        <span>Cristiano R</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src=".//img/users/martha.jpeg" alt="">
+                        </div>
+                        <span>Martha</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src="./img/users/joanna.jpeg" alt="">
+                        </div>
+                        <span>Joanna</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src="./img/users/mark.jpeg" alt="">
+                        </div>
+                        <span>Mark Q.</span>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="image-square image-square--default is-active">
+                            <img src="./img/users/paul.jpeg" alt="">
+                        </div>
+                        <span>Paul</span>
+                    </div>
+
+                </div> 
+            </div>
+
+        <article class="post-card">
+                <header class="post-card__header">
+
+                    <div class="post-card__user">
+                        <div class="image-square image-square--tiny is-active">
+                            <img src="img/users/john.jpeg" alt="">
+                        </div>
+                        <div class="post-card__user-info">
+                            <span class="post-card__username">John Doe</span>
+                            <span class="post-card__location">Szczecin, Polska</span>
+                        </div>
+                    </div>
+                    <button class="post-card__menu-btn">•••</button>
+                </header>
+
+                <div class="post-card__image">
+                    <img src="./img/photos/gielda.jpeg" alt="">
+                </div>
+
+                <footer class="post-card__footer">
+                    <div class="post-card__actions">
+                        <div class="post-card__actions-left">
+                            <img src="./img/heart.svg" alt="Lubię to" class="">
+                            <img src="./img/comment.svg" alt="Komentarz" class="">
+                            <img src="./img/send.svg" alt="Udostępnij" class="">
+                        </div>
+                    </div>
+                    <div class="post-card__likes">Liczba polubień: 2</div>
+                    <div class="post-card__caption">
+                        <strong>John Doe:</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dolor, quis aliquam quaerat ducimus fugit officia, quisquam laborum cum porro quibusdam, consectetur id tempore? Tenetur facere suscipit doloribus quo in?
+                    </div>
+                    <div class="post-card__comment-input">
+                        <img src="./img/smile.svg" alt="">
+                        <input type="text" placeholder="Dodaj komentarz...">
+                    </div>
+                </footer>
+            </article>
+
+        <article class="post-card">
+
+                <header class="post-card__header">
+
+                    <div class="post-card__user">
+                <div class="image-square image-square--tiny is-active">
+                <img src="./img/users/lisa.jpeg" alt="">
+            </div>
+            <div class="post-card__user-info">
+                <span class="post-card__username">Lisa</span>
+                <span class="post-card__location">Kraków, Polska</span>
+            </div>
+        </div>
+        <button class="post-card__menu-btn">•••</button>
+    </header>
+
+    <div class="post-card__image">
+        <img src="./img/photos/stoisko.jpeg" alt="">
+    </div>
+
+    <footer class="post-card__footer">
+
+        <div class="post-card__actions">
+            <div class="post-card__actions-left">
+                <img src="./img/heart.svg" alt="Lubię to" class="nav-icon">
+                <img src="./img/comment.svg" alt="Komentarz" class="nav-icon">
+                <img src="./img/send.svg" alt="Udostępnij" class="nav-icon">
+            </div>
+        </div>
+        <div class="post-card__likes">Liczba polubień: 15</div>
+        <div class="post-card__caption">
+            <strong>Lisa:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam cupiditate, nostrum error exercitationem iusto maxime odit eos debitis totam, reiciendis harum dolorum, dicta corrupti ex provident! Voluptates incidunt odio omnis.
+        </div>
+        <div class="post-card__comment-input">
+            <img src="./img/smile.svg" alt="">
+            <input type="text" placeholder="Dodaj komentarz...">
+        </div>
+
+    </footer>
+</article>
+
+    <article class="post-card">
+        <header class="post-card__header">
+            <div class="post-card__user">
+                <div class="image-square image-square--tiny is-active">
+                    <img src="../projekt-zaliczenie/img/users/cristiano.jpeg" alt="">
+                </div>
+                <div class="post-card__user-info">
+                    <span class="post-card__username">Cristiano</span>
+                    <span class="post-card__location">Kraków, Polska</span>
+                </div>
+            </div>
+            <button class="post-card__menu-btn">•••</button>
+        </header>
+
+    <div class="post-card__image">
+        <img src="./img/photos/presentation.jpeg" alt="">
+    </div>
+
+    <footer class="post-card__footer">
+
+        <div class="post-card__actions">
+            <div class="post-card__actions-left">
+                <img src="./img/heart.svg" alt="Lubię to" class="">
+                <img src="./img/comment.svg" alt="Komentarz" class="">
+                <img src="./img/send.svg" alt="Udostępnij" class="">
+            </div>
+        </div>
+        <div class="post-card__likes">Liczba polubień: 42</div>
+        <div class="post-card__caption">
+            <strong>Cristiano</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam tempore unde beatae tempora saepe maxime, fuga blanditiis magni perferendis rerum quibusdam sint nulla praesentium, sunt odit eum dolorum accusantium consectetur?
+        </div>
+        <div class="post-card__comment-input">
+            <img src="./img/smile.svg" alt="">
+            <input type="text" placeholder="Dodaj komentarz...">
+        </div>
+        <div class="feed-footer">
+    <button class="load-more-btn">Załaduj więcej...</button>
+    
+    <footer class="page-footer">
+
+        <ul class="footer-links">
+            <li><a href="#">Informacje</a></li>
+            <li><a href="#">Pomoc</a></li>
+            <li><a href="#">Prasa</a></li>
+            <li><a href="#">Regulamin</a></li>
+            <li><a href="#">Lokalizacje</a></li>
+            <li><a href="#">Język</a></li>
+        </ul>
+        <span class="copyright">© 2022 Shopstagram</span>
+
+    </footer>
+        </div>
+</article>
+        </section>
+
+        <aside class="sidebar">
+        <div class="user-profile">
+            <div class="image-square image-square--small">
+                <img src="./img/users/user.jpeg" alt="">
+            </div>
+            <div class="user-profile__info">
+                <span class="user-profile__username">Mark_Shoper</span>
+                <span class="user-profile__name">Mark Shopson</span>
+            </div>
+            <button class="action-link">Przełącz</button>
+        </div>
+
+        <div class="suggestions">
+            <div class="suggestions__header">
+                <span>Propozycje dla Ciebie</span>
+                <button class="action-link action-link--dark">Zobacz wszystkich</button>
+            </div>
+
+        <div class="suggestions__list">
+            <div class="suggestion-item">
+                <div class="image-square image-square--small">
+                    <img src="./img/users/joshua.jpeg" alt="">
+                </div>
+                <div class="suggestion-item__info">
+                    <span class="suggestion-item__username">Joshua Deep</span>
+                    <span class="suggestion-item__relation">Nowy na Instagramie</span>
+                </div>
+                <button class="action-link">Obserwuj</button>
+            </div>
+
+            <div class="suggestion-item">
+                <div class="image-square image-square--small">
+                    <img src="img/users/sophie.jpeg" alt="">
+                </div>
+                <div class="suggestion-item__info">
+                    <span class="suggestion-item__username">Sophie Lee</span>
+                    <span class="suggestion-item__relation">Obserwowana przez John</span>
+                </div>
+                <button class="action-link">Obserwuj</button>
+            </div>
+
+            <div class="suggestion-item">
+                <div class="image-square image-square--small">
+                    <img src="./img/users/betty.jpeg" alt="">
+                </div>
+                <div class="suggestion-item__info">
+                    <span class="suggestion-item__username">Ugly Betty</span>
+                    <span class="suggestion-item__relation">Obserwowana przez Mark</span>
+                </div>
+                <button class="action-link">Obserwuj</button>
+            </div>
+        </div>
+    </div>
+</aside>
+    </main>
+
+</body>
+</html>
