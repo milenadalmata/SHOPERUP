@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #ba1789;
+}
+
+p {
+    @include text-style(black, 16px); // Użyje domyślnego 'normal' [cite: 279]
+}
+
+h1 {
+    @include text-style($primary-color, 40px, bold); // Nadpisze wagę na 'bold' [cite: 276]
+}

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #ba1789;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h1 {
+  color: rgb(255, 96, 221);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.page-header {
+  gap: 40px;
+}
+
+.button {
+  background-color: rgb(255, 96, 221);
+  padding: 10px 5px;
+}
+
+.btn-main {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-main:hover {
+  background-color: rgb(33.8356164384, 47.5, 61.1643835616);
+}
+
+.btn-save {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-save:hover {
+  background-color: rgb(29.661971831, 132.338028169, 73.014084507);
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+table tr:first-child {
+  font-weight: bold;
+  background-color: #34495e;
+  color: white;
+}
+table tr:last-child {
+  border-bottom: 3px solid red;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(5) {
+  color: gold;
+  font-weight: bold;
+}
+
+.btn-magic {
+  padding: 10px 25px;
+  background-color: #ba1789;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+.btn-magic::after {
+  content: " →";
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.btn-magic:hover::after {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.btn-cta {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.btn-cta:hover {
+  background-color: green;
+  color: black;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}
+.live-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.progress-container {
+  width: 100%;
+  background-color: #ccc;
+  height: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.progress-container .progress-bar {
+  height: 100%;
+  background-color: blue;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}/*# sourceMappingURL=style.css.map */

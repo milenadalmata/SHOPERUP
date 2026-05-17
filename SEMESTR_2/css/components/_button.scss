@@ -1,0 +1,5 @@
+.button {
+    background-color: $primary-color; 
+    // Padding: góra/dół ($base-padding), lewo/prawo (połowa $base-padding)
+    padding: $base-padding ($base-padding / 2);
+}

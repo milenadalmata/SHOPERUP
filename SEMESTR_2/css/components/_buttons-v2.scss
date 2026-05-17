@@ -1,0 +1,25 @@
+@mixin button-style($type) {
+    $base-color: get-btn-color($type); 
+    background-color: $base-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover { 
+        background-color: darken($base-color, 10%); 
+    }
+}
+
+.btn-main {
+    @include button-style("default"); 
+}
+
+.btn-save {
+    @include button-style("success"); 
+}
+
+.btn-delete {
+    @include button-style("error");
+}
