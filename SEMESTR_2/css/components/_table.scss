@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        
+        &:first-child {
+            font-weight: bold;
+            background-color: pink; 
+            color: white;
+        }
+
+      
+        &:last-child {
+            border-bottom: 3px solid red;
+        }
+
+        
+        &:nth-child {
+            background-color: #c2c2c2; 
+        }
+
+       
+        &:nth-child(5) {
+            color: gold;
+            font-weight: bold;
+        }
+    }
+}

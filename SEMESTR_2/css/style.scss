@@ -1,0 +1,31 @@
+
+// BASE & VARIABLES
+
+@import "./base/colors";
+@import "./base/variables";
+
+
+// HELPERS (Funkcje, Mixiny, Placeholdery)
+
+@import "./helpers/mixins";
+@import "./helpers/placeholders";
+@import "./helpers/button-logic";
+
+
+// BASE STYLES
+
+@import "./base/base";
+
+
+// COMPONENTS 
+
+@import "./components/page-header/page-header";
+@import "./components/button";           // Zadanie z przyciskiem 
+@import "./components/buttons-v2";       // Zadanie 3
+@import "./components/table";
+@import "./components/button-magic";
+
+// NOWE 
+@import "./components/button-cta";       // Zadanie 1 (Płynny przycisk CTA)
+@import "./components/live-indicator";   // Zadanie 2 (Wskaźnik Live)
+@import "./components/loading-bar";      // Zadanie 3 (Pasek postępu)

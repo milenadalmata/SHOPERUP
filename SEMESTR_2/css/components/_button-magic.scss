@@ -1,0 +1,23 @@
+.btn-magic {
+  padding: 10px 25px;
+  background-color: #ba1789; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+
+  &::after {
+    content: " →";
+    opacity: 0; 
+    display: inline-block;
+    transition: all 0.3s ease; 
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1; 
+      transform: translateX(5px); 
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$button-colors: (
+    "default": #34495e,
+    "success": #27ae60,
+    "error": #e74c3c
+);
+
+@function get-btn-color($name) {
+    @if map-has-key($button-colors, $name) {
+        @return map-get($button-colors, $name);
+    } @else {
+        @warn "Błąd: #{$name} nie istnieje";
+        @return #000;
+    }
+}
